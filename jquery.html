@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "tr">
+    <head>
+        <meta charset = "utf-8">
+        <title>JQUERY</title>
+        <meta name = "title" content = "">
+        <meta name = "keywords" content = "">
+        <meta name = "description" content = "">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="w3-bar w3-light-grey">
+            <a href="index.html" class="w3-bar-item w3-button">HTML5</a>
+            <a href="css.html" class="w3-bar-item w3-button">CSS3</a>
+            <a href="js.html" class="w3-bar-item w3-button">JAVASCRIPT</a>
+            <a href="jquery.html" class="w3-bar-item w3-button">JQUERY</a>
+            <a href="php.html" class="w3-bar-item w3-button">PHP</a>
+        </div>
+
+        <table class = "bluetable">
+            <thead>
+                <tr>
+                    <th>JQUERY</th>
+                    <th>Concept</th>
+                    <th>Asset(s)</th>
+                    <th>Additional Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Basic Selectors</td>
+                    <td>$("*"), $("tag"), $(".class"), $("#id")</td>
+                    <td>
+                        var node = $("#test_element") <br />
+                        $("ul a:link") -> selects a tags which have got href value <br />
+                        $("main > p")
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Attributes</td>
+                    <td>$().attr(), $().prop(), $().css()</td>
+                    <td>
+                        var node = $("a").attr(href); -> gets a tags' href values<br />
+                        $("a").attr(href, "https://github.com/efefurkankarakaya"); -> sets the url to a tags' href attribute <br />
+                        $("a").attr(class, "test_class"); -> sets the new class name to all a tags <br />
+                        $("#check-box").prop("checked"); -> sets checked prop value true <br />
+                        $("#box").css("background-color"); -> gets background-color value <br />
+                        $("#box").css("background-color", "blue"); -> sets blue to background-color value
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Events</td>
+                    <td>$().ready(function(){ ... }) <br /> 
+                        $(function(){ ... }) <br />
+                        $().on(eventName, function(){ ... }) <br />
+                        $().off(eventName) <br />
+                    </td>
+                    <td>
+                        $("#section").on("mousemove", function(event){ <br />
+                            console.log(event); <br />
+                        })<br /><br />
+                        $("#section").on("click", function(event){ <br />
+                            console.log(event.pageY); <br />
+                            console.log(event.pageX); <br />
+                            $("#section").off("mousemove"); <br />
+                        })
+                        <br /><br />
+                        $(document).ready(function(){
+                            console.log("DOM Content Loaded");
+                        })
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nodes</td>
+                    <td>
+                        $().append(), node.appendTo(), $().before(), node.insertBefore(), $().prepend(), node.prependTo(), $().after(), node.insertAfter(), $().wrap() 
+                    </td>
+                    <td>                        
+                        (javascript) <br />
+                        var node = document.createElement("a"); <br />
+                        node.href = "https://github.com/efefurkankarakaya"; <br />
+                        node.innerHTML = "Link";<br /><br />
+ 
+                        (jquery) <br />
+                        v1 -> var node = $("&lt;a href="https://github.com/efefurkankarakaya"&gt;Link&lt;/a&gt;"); <br /> <br />
+                        v2 ->  <br />
+                            var node = $("&lt;a&gt;&lt;/a&gt;")  <br />
+                            node.attr("href", "https://github.com/efefurkankarakaya");  <br />
+                            node.html("Link"); <br /> <br />
+                        v3 -> var node = $("&lt;a&gt;", { <br />
+                                href: "https://github.com/efefurkankarakaya",  <br />
+                                text: "Link" <br />
+                        })  </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Effects and Animations</td>
+                    <td>$().hide(), $().slideDown(), $().slideUp(), $().animate(), </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>AJAX</td>
+                    <td>$().load(), $.get(), jQuery.get(), jqXHR.done(), jqXHR.fail(), jqXHR.always(), $.post(), $().serialize(), $.ajax()</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang = "tr">
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3</title>
+        <meta name = "title" content = "">
+        <meta name = "keywords" content = "">
+        <meta name = "description" content = "">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="w3-bar w3-light-grey">
+            <a href="index.html" class="w3-bar-item w3-button">HTML5</a>
+            <a href="css.html" class="w3-bar-item w3-button">CSS3</a>
+            <a href="js.html" class="w3-bar-item w3-button">JAVASCRIPT</a>
+            <a href="jquery.html" class="w3-bar-item w3-button">JQUERY</a>
+            <a href="php.html" class="w3-bar-item w3-button">PHP</a>
+        </div>
+
+        <table class = "bluetable">
+            <thead>
+                <tr>
+                    <th>CSS3</th>
+                    <th>Property Type</th>
+                    <th>Tag(s)</th>
+                    <th>Selector(s)</th>
+                    <th>Propert(y / ies)</th>
+                    <th>Additional Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>em</td>
+                    <td>em</td>
+                    <td>
+                        color: red;
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>(Font Styling)</td>
+                    <td>p</td>
+                    <td>p</td>
+                    <td>
+                        font, font-variant, font-weight, font-family, font-size, font-style, margin, padding, border, vertical-align
+                    </td>
+                    <td>margin: 5px 0 10px 0; <br /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Spacing</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        margin, margin-bottom, padding, padding-top
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sizing</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        height, min-height, max-height, width, min-width, max-width
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Layout</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        bottom, left, right, top, clear, display, float, overflow, position, visibility, z-index
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Lists</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        list-style, list-style-image, list-style-type
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Effects</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        animation, filter, perspective, transform, transition, opacity
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Colors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Name, RGB, RGBA, Hexadecimal, HSL</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Units</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Relative: px, em, %, vw, vh <br />
+                        Absolute: in, cm, pt
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td>img, a</td>
+                    <td>[title]</td>
+                    <td>cursor, padding-bottom, border-bottom, text-decoration</td>
+                    <td>
+                        &lt;img src="image.png" title="Image"&gt; <br />
+                        &lt;a href="https://google.com" title="Link"&gt; <br />
+                        [title] { <br />
+                        cursor: help; <br />
+                        padding-bottom: 3px; <br />
+                        border-bottom: 2px dotted blue; <br />
+                        text-decoration: none;
+                        }</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Attribute Selectors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        [] -> specific attribute <br />
+                        [=] -> specific attribute with value <br />
+                        [^=] -> specific attribute whose value begins with the value<br />
+                        [*=] -> specific attribute whose value contains substring <br />
+                        [$=] -> specific attribute whose value ends with the value
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Pseudo-element & Pseudo-class Selectors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        a:link (only with elements)<br />
+                        a:visited (only with elements)<br />
+                        :focus <br />
+                        :hover <br />
+                        :active <br />
+                        :checked <br />
+                        :first-child <br />
+                        :first-letter <br />
+                        :first-line
+                    </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Contextual Selectors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        div a -> selects a which must be in anywhere inside of the div (example: div>p>a)<br />
+                        div>p -> selects any p which is child of the div<br />
+                        h3+p -> selects first p after any h3<br />
+                        h3~p -> selects all p tags which are have same parent with h3<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td>html, body, div, span, h1, h2, h3, h4, h5, h6, p</td>
+                    <td>html, body, div, span, h1, h2, h3, h4, h5, h6, p</td>
+                    <td>margin, padding, border, font-size, vertical-align</td>
+                    <td>
+                        margin: 0; <br /> 
+                        padding: 0; <br />
+                        border: 0; <br />
+                        font-size: 100%; <br />
+                        vertical-align: baseline; 
+                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Box Model</td>
+                    <td></td>
+                    <td></td>
+                    <td>background, background-attachment, background-color, background-image, background-position, background-repeat, background-size, border-color, box-sizing, width, height, padding, margin, overflow, box-shadow</td>
+                    <td>background-image: url("image.png"); <br />
+                        background-repeat: repeat; <br />
+                        background-repeat: no-repeat; <br />
+                        background-repeat: repeat-y; <br />
+                        background-repeat: repeat-x; <br /> 
+                        border-color: blue yellow red grey; <br />
+                        box-sizing: content-box; <br />
+                        box-sizing: border-box;
+                    </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Overflow</td>
+                    <td></td>
+                    <td></td>
+                    <td>overflow</td>
+                    <td>
+                        overflow: visible; <br />
+                        overflow: hidden; <br />
+                        overflow: scroll; <br />
+                        overflow: auto; <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Paragraph Styling</td>
+                    <td></td>
+                    <td></td>
+                    <td>letter-spacing, line-height, text-align, text-decoration, text-shadow, text-transform</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Table Styling</td>
+                    <td>table, td</td>
+                    <td></td>
+                    <td>border, border-collapse, border-spacing, border-bottom, border-left</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Gradient</td>
+                    <td></td>
+                    <td></td>
+                    <td>linear-gradient, repeating-linear-gradient, radial-gradient</td>
+                    <td>
+                        background-image: linear-gradient(green, white) <br />
+                        background-image: linear-gradient(to top left, white, grey) <br />
+                        background-image: linear-gradient(90deg, yellow 75%, grey, blue) <br />
+                        background-image: repeating-linear-gradient(135deg, grey 0, grey .75em, blue 0, blue 2em);
+                        background-image: radial-gradient(circle, blue, grey);
+                    </td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Positioning</td>
+                    <td></td>
+                    <td></td>
+                    <td>position, z-index</td>
+                    <td>position = [absolute, fixed, relative, static]</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Floating</td>
+                    <td></td>
+                    <td></td>
+                    <td>float, clear, display, visibility</td>
+                    <td>
+                        float = [left, right] <br />
+                        clear = [left, right, both, none] <br />
+                        display = [none, auto] <br />
+                        visibility = [hidden, visible]
+                    </td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Flexbox</td>
+                    <td></td>
+                    <td></td>
+                    <td>display, align-items, justify-content, flex-wrap, flex-direction, flex-grow, flex-shrink, flex-basis</td>
+                    <td>
+                        display = [none, auto, flex] <br />
+                        align-items = [stretch, space-around, space-between, center, flex-end, flex-start] <br />
+                        justify-content = [flex-start, flex-end, center, space-between, space-around] <br />
+                        flex-direction = [row, row-reverse, column, column-reverse] <br />
+                        flex-wrap = [wrap]
+                    </td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Responsive Design (Media Queries)</td>
+                    <td></td>
+                    <td></td>
+                    <td>@media only screen and (max-width: 720px)</td>
+                    <td>
+                        [width, height, device-width, device-height, orientation (portrait or landscape), color] <br />
+                        &lt;link rel="stylesheet" href="mobile.css" media="screen and (max-width: 720px)" /&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Filters, Transitions and Animations</td>
+                    <td></td>
+                    <td></td>
+                    <td>filter, -webkit-filter, transition, transition-property, transition-duration, transition-timing-function, transition-delay, animation, animation-iteration-count, animation-name, animation-play-state, animation-duration, animation-timing-function, animation-delay</td>
+                    <td>
+                        filter: grayscale(100%); <br />
+                        filter: blur(5px) hue-rotate(60deg) saturate(2); <br />
+                        transition-timing-function = [linear, ease-out, ease-in] <br />
+                        transition: left .6s ease-out; <br />
+                        animation-iteration-count: infinite;
+                        animation-name: bounceIn;
+                        animation-play-state = [running, paused]
+                        animation-duration: 2s;
+                        animation-timing-function: ease-out;
+                        animation-delay: 1s;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

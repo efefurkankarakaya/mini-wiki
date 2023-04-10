@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = "tr">
+    <head>
+        <meta charset = "utf-8">
+        <title>PHP</title>
+        <meta name = "title" content = "">
+        <meta name = "keywords" content = "">
+        <meta name = "description" content = "">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="w3-bar w3-light-grey">
+            <a href="index.html" class="w3-bar-item w3-button">HTML5</a>
+            <a href="css.html" class="w3-bar-item w3-button">CSS3</a>
+            <a href="js.html" class="w3-bar-item w3-button">JAVASCRIPT</a>
+            <a href="jquery.html" class="w3-bar-item w3-button">JQUERY</a>
+            <a href="php.html" class="w3-bar-item w3-button">PHP</a>
+        </div>
+        
+
+        <table class = "bluetable">
+            <thead>
+                <tr>
+                    <th>PHP</th>
+                    <th>Concept</th>
+                    <th>Asset(s)</th>
+                    <th>Additional Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Data Types</td>
+                    <td>Integer, Float, String, Boolean, Array, Object</td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Escape Characters</td>
+                    <td>\n -> Line Feed <br />
+                        \t -> Horizontal Tab <br />
+                        \\ -> Backslash <br />
+                        \$ -> Dollar Sign <br />
+                        \" -> Double Quote
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Built-in methods / functions</td>
+                    <td>define(), echo(), printf(), include, include_once, date(), print_r()
+                    </td>
+                    <td>
+                        define() -> Defines a constant -> define("CONSTANT", "Hello world."); <br /><br />
+
+                        echo()-> echo "Hello" . $name; <br /> <br />
+
+                        printf() -> printf("Number: %s, Float: %.2f", $product, $weight); <br /> <br />
+
+                        date() -> echo date("H:i:s"); <br />
+                        H - 24-hour format of an hour (00 to 23) <br />
+                        i - Minutes with leading zeros (00 to 59) <br />
+                        s - Seconds, with leading zeros (00 to 59) <br /> <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Conditional Statements and Loops</td>
+                    <td> switch(){}, if(){}, elseif(){}, else{}, while(){}, do{} while(), for(){}, foreach)() {} 
+                    </td>
+                    <td>
+                        switch($key) { <br />case true: function(); break; <br /> default: function(); break; <br /> } <br /> <br />
+
+                        for ($i = 0; $i < 100; $i++) {} <br /> <br />
+
+                        &lt;?php if ($status == "loggedIn") : ?&gt; <br /> 
+                        &lt;a href="account.php"&gt;Account&lt;/a&gt; <br />
+                        &lt;a href="logout.php"&gt;Logout&lt;/a&gt; <br />
+                        &lt;?php else : ?&gt; <br />
+                        &lt;a href="login.php"&gt;Login&lt;/a&gt; <br />
+                        &lt;a href="register.php"&gt;Register&lt;/a&gt; <br />
+                        &lt;?php endif; ?&gt; <br /> <br />
+
+                        foreach($arr as $item){}
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Functions</td>
+                    <td></td>
+                    <td>
+                        function returnHello() : string { <br />
+                            return "hello"; <br />
+                        } <br /> <br />
+                        &$state -> Reference <br /> <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Arrays</td>
+                    <td>sort(), asort(), array_keys(), array_values(), array_rand($arr, $num=1), array_reverse(), array_walk($arr, $callback, $opt_param), in_array($needle, $haystack, $opt_strict), shuffle()</td>
+                    <td>
+                        $numbers = array(1, 2, 3); <br />
+                        $numbers = [1, 2, 3]; <br /> <br />
+
+                        $dictionary = array("first" => "JavaScript", "second" => "Python"); <br />
+                        echo $dictionary["first"]; <br /> <br />
+                        
+                        $arr = [
+                            array(1, 2, 3),
+                            array(1, 2, 3),
+                            array(1, 2, 3),
+                            array(1, 2, 3)
+                        ]; <br />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>SUPERGLOBAL Arrays</td>
+                    <td>$GLOBALS, $_COOKIES, $_ENV, $_FILES, $_GET, $_POST, $_REQUEST, $_SESSION, $_SERVER</td>
+                    <td>
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") { <br />
+                            if ( isset($_POST["name"]) && isset($_POST["pass"]) ) { <br />
+                            // handle the data <br />
+                            } <br /><br />
+
+                        $username = isset($_GET['name']) ? $_GET['name'] : 'nobody'; <br /><br />
+
+                        &lt;a href="user.php?id=19184193"&gt;&lt;/a&gt; <br /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>$_SERVER Array</td>
+                    <td>$_SERVER["REQUEST_TIME"], $_SERVER["HTTP_USER_AGENT"], $_SERVER["HTTP_CONNECTION"], $_SERVER["HTTP_HOST"], $_SERVER["HTTP_ACCEPT_ENCODING"], $_SERVER["SERVER_NAME"], $_SERVER["SERVER_ADDR"], $_SERVER["SERVER_PORT"]</td>
+                    <td>
+                        $browser = get_browser($_SERVER['HTTP_USER_AGENT'], true); <br /> <br />
+                        $previousPage = $_SERVER['HTTP_REFERER']; <br />
+                        if (strpos($previousPage,"search.php") != 0) <br />
+                        { <br />
+                            echo "&lt;a href='search.php'&gt;Back to search&lt;/a&gt;"; <br />
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>$_FILES Array</td>
+                    <td>$_FILES[""]</td>
+                    <td>
+                        Requirements: <br />
+                        * POST method <br />
+                        * enctype="multipart/form-data" <br />
+                        * type="file" <br />
+                        * &lt;form enctype="multipart/form-data" method="POST"&gt; <br />
+                        * &lt;input type="file"&gt; <br /> <br />
+
+                        Error Checking <br />
+                        foreach ($_FILES as $fileKey => $fileArray) { <br />
+                        if ($fileArray["error"] != UPLOAD_ERR_OK){ <br />
+                        echo "Error: " . $fileKey . " has error" . $fileArray["error"]; }<br />
+                        else{ <br />
+                        echo $fileKey . "Uploaded."; } <br />
+                        } <br /> <br />
+
+                        Type Limiting <br />
+                        $validExt = array("jpg", "png"); <br />
+                        $validMime = array("image/jpeg","image/png"); <br />
+                        foreach($_FILES as $fileKey => $fileArray ){ <br />
+                            $extension = end(explode(".", $fileArray["name"])); <br />
+                            if (in_array($fileArray["type"],$validMime) && in_array($extension, $validExt)) { <br />
+                                echo "Extension and mime types are valid"; } <br />
+                            else { <br />
+                                echo "There was a problem moving the file."; }<br />
+                        } <br /> <br />
+
+                        File Moving <br />
+                        $fileToMove = $_FILES['file1']['tmp_name']; <br />
+                        $destination = "./upload/" . $_FILES["file1"]["name"]; <br />
+                        if (move_uploaded_file($fileToMove,$destination)) { <br />
+                            echo "The file was uploaded and moved successfully!"; <br />
+                        } <br />
+                        else { <br />
+                            echo "There was a problem moving the file."; <br />
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Reading / Writing Files</td>
+                    <td>Stream Access: fopen(), fgets(), fclose() <br />
+                        In-memory Access: file(), file_get_contents(), file_put_contents()
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Classes / Objects</td>
+                    <td>public, private, $this
+                    </td>
+                    <td>
+                        $skyline = new Car(); <br />
+                        $skyline -> color = "Blue, <br /> <br />
+
+                        function __construct($firstName, $lastName, $graduate=null){} <br /> <br />
+
+                        public function displayName(){}; <br /> <br />
+                        
+                        public $lastName; <br />
+                        private $name; <br />
+                        public function publicFunction() { <br /> 
+                            $name = $this -> name; <br />
+                            $lastName = this -> lastName; <br />
+                            $year = this -> privateFunction(); <br />
+                        } <br />
+                        private function privateFunction() { return 2020; }; <br /> <br />
+
+                        const LANGUAGE = "PHP"; <br />
+                        self::LANGUAGE <br />
+                        classReference::LANGUAGE <br /> <br />
+
+                        class EDM extends Music{} <br /> <br />
+
+                        interface Person { <br />
+                            public function getName(); <br />
+                            public function getAge(); <br />
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
